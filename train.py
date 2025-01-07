@@ -30,8 +30,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy.exceptions import SpotifyException
 from collections import defaultdict
 
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id='c7461b2661ef46ebaec1f96ae329dc36',
-                                                           client_secret='ddb8161e4b1046d78bd175a74f032136'))
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id='544279092fa545219ff9de586346603f',
+                                                           client_secret='510c638b994442feac183f708b781339'))
 
 def find_song(name, year):
     song_data = defaultdict()
@@ -161,4 +161,3 @@ number_cols = list(X.columns)
 song_cluster_pipeline.fit(X)
 song_cluster_labels = song_cluster_pipeline.predict(X)
 data['cluster_label'] = song_cluster_labels
-
